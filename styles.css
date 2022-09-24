@@ -108,6 +108,14 @@ main {
   border: 1px solid hsl(246deg, 25%, 77%);
   border-radius: 4px;
 }
+.signup-form__input:focus:invalid {
+  border: 2px solid hsl(0deg, 100%, 74%);
+  outline: none;
+}
+.signup-form__input.invalid {
+  border: 2px solid hsl(0deg, 100%, 74%);
+  outline: none;
+}
 .signup-form__ab-submit {
   padding: 24px 44px;
   background-color: hsl(154deg, 59%, 51%);

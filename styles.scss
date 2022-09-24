@@ -116,6 +116,15 @@ main {
     color: $Dark-Blue;
     border: 1px solid $Grayish-Blue;
     border-radius: 4px;
+
+    &:focus:invalid {
+      border: 2px solid $red;
+      outline: none;
+    }
+    &.invalid {
+      border: 2px solid $red;
+      outline: none;
+    }
   }
 
   &__ab-submit {
