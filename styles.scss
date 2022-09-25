@@ -78,6 +78,7 @@ main {
 
 .signup-form {
   margin: 0 24px;
+  flex-basis: 70%;
 
   &__offer {
     padding: 28px 70px;
@@ -125,6 +126,22 @@ main {
       border: 2px solid $red;
       outline: none;
     }
+  }
+
+  &__errorIcon {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 25px;
+    //to be changed to inline using css;
+    display: none;
+  }
+
+  &__errortext {
+    color: $red;
+    font-size: 14px;
+    //to be changed using js to block
+    display: none;
+    text-align: end;
   }
 
   &__ab-submit {

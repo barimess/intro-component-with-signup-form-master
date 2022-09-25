@@ -69,6 +69,7 @@ main {
 
 .signup-form {
   margin: 0 24px;
+  flex-basis: 70%;
 }
 .signup-form__offer {
   padding: 28px 70px;
@@ -115,6 +116,18 @@ main {
 .signup-form__input.invalid {
   border: 2px solid hsl(0deg, 100%, 74%);
   outline: none;
+}
+.signup-form__errorIcon {
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 25px;
+  display: none;
+}
+.signup-form__errortext {
+  color: hsl(0deg, 100%, 74%);
+  font-size: 14px;
+  display: none;
+  text-align: end;
 }
 .signup-form__ab-submit {
   padding: 24px 44px;
