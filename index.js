@@ -29,8 +29,24 @@ function validateForm(event) {
 
   for (const dataEntry in data) {
     console.log(data[dataEntry].value);
-    if (data[dataEntry].value == "" || data[dataEntry].value == null) {
-      //  do something
+    //validating email,
+    if (
+      data[dataEntry].element.name == "email" &&
+      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
+        data[dataEntry].value
+      )
+    ) {
+      return;
+    } else {
+      if (data[dataEntry].value == "" || data[dataEntry].value == null) {
+        data[dataEntry].error.style.display = "block";
+        data[dataEntry].errorIcon.style.display = "inline";
+        data[dataEntry].element.classList.add("signup-form__input__error");
+      } else {
+        data[dataEntry].error.style.display = "none";
+        data[dataEntry].errorIcon.style.display = "none";
+        data[dataEntry].element.classList.remove("signup-form__input__error");
+      }
     }
   }
 }

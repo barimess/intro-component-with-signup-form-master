@@ -117,6 +117,10 @@ main {
   border: 2px solid hsl(0deg, 100%, 74%);
   outline: none;
 }
+.signup-form__input__error {
+  border: 2px solid hsl(0deg, 100%, 74%);
+  outline: none;
+}
 .signup-form__errorIcon {
   position: absolute;
   margin-left: -40px;
